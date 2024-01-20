@@ -28,7 +28,7 @@ export default function Players({ playerName, playerSymbol,isActive}) {
                 <span className="player-Symbol">{playerSymbol}</span>
             </span>
             <button onClick={editHandler} disabled={playerSymbol !== null }>{editPlayer ? "Save" : "Edit"} </button>
-        </li>
+        </li> 
 
     </>);
 }
