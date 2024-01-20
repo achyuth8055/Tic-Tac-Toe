@@ -21,7 +21,6 @@ export default function Players({ playerName, playerSymbol,isActive}) {
     }
     
     return (<>
-
         <li className={isActive?'active':undefined}>
             <span className="player">
                 {editable}
@@ -29,6 +28,5 @@ export default function Players({ playerName, playerSymbol,isActive}) {
             </span>
             <button onClick={editHandler} disabled={playerSymbol !== null }>{editPlayer ? "Save" : "Edit"} </button>
         </li> 
-
-    </>);
+    </>)
 }
